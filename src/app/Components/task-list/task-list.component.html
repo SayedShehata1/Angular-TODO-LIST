@@ -11,7 +11,7 @@
     <button type="submit" class="add-button">Add Task</button>
   </form>
 
-  <ul>
+  <ul *ngIf="!isLoading && !errorMessage">
     <li *ngFor="let task of tasks" class="task-item">
       <app-task-item
         [task]="task"
@@ -21,4 +21,9 @@
     </li>
     <li *ngIf="tasks.length === 0">No tasks found</li>
   </ul>
+  <div *ngIf="isLoading" class="loading-indicator">Loading...</div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
 </div>

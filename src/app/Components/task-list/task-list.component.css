@@ -74,3 +74,16 @@
   filter: blur(2px);
   z-index: -1;
 }
+
+.loading-indicator {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.error-message {
+  color: red; /* Style the error message in red */
+  text-align: center;
+  margin: 20px 0;
+}
