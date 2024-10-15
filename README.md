@@ -1,27 +1,69 @@
-# AngularTODOLIST
+<div id="top"></div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+</br>
+<div align="center">
+      <a href="https://todo-list-eight-ebon.vercel.app/">
+       <img src="public/preview.png" alt="project image">
+      </a>
+</div>
 
-## Development server
+### Built With
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular
+- TypeScript
+- Angular CLI
+- JSON Server (for local mock API)
 
-## Code scaffolding
+### Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Add Tasks**: Users can add new tasks to the list.
+- **Remove Tasks**: Users can remove tasks from the list.
+- **Mark as Completed**: Users can mark tasks as completed or incomplete.
+- **Persistent State**: Tasks are stored and retrieved from a local and a deployed JSON Server.
+- **Responsive UI**: Modern and clean interface, ensuring good user experience on different devices.
+- **Real-Time Updates**: Task list updates instantly as users interact with it.
+- **Error and Loading States**: Handle loading and error messages for all crud operations.
 
-## Build
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project require some perquisites and dependencies to be installed, you can find the instructions below:
 
-## Running end-to-end tests
+### Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+> To get a local copy, follow these simple steps :
 
-## Further help
+1. Clone the repo
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```sh
+   git clone https://github.com/SayedShehata1/Angular-TODO-LIST
+   ```
+
+2. go to client folder
+
+   ```sh
+   cd Angular-TODO-LIST
+   ```
+
+3. install dependencies
+
+   ```bash
+   npm install
+   ```
+
+4. Run the local JSON server
+
+   ```sh
+   npm run json-server
+   ```
+
+5. Run development server
+
+   ```sh
+   npm run dev
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
