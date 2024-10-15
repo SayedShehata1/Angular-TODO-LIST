@@ -1,2 +1,20 @@
-<p>task-list works!</p>
-<app-task-item></app-task-item>
+<div class="task-list">
+  <h2 style="color: #714d26">Todo List</h2>
+  <form (submit)="addTask($event)" class="addTodo">
+    <input
+      type="text"
+      [(ngModel)]="newTaskTitle"
+      name="taskInput"
+      placeholder="Enter new task"
+      class="task-input"
+    />
+    <button type="submit" class="add-button">Add Task</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let task of tasks" class="task-item">
+      <app-task-item></app-task-item>
+    </li>
+    <li *ngIf="tasks.length === 0">No tasks found</li>
+  </ul>
+</div>

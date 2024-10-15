@@ -21,7 +21,6 @@ export class TaskService {
 
   // Toggle Task Completion
   toggleCompletion(task: Task): Observable<Task> {
-    console.log('Task completed:', task);
     return this.http.put<Task>(`${this.API_URL}/${task.id}`, {
       ...task,
       completed: !task.completed,
@@ -30,7 +29,6 @@ export class TaskService {
 
   // Delete a task
   deleteTask(id: string): Observable<void> {
-    console.log('Task deleted:', id);
     return this.http.delete<void>(`${this.API_URL}/${id}`);
   }
 }
