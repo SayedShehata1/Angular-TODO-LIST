@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Task } from '../../Models/Task';
+import { Task } from '../../Models/task';
 import { CommonModule } from '@angular/common';
 
 @Component({
