@@ -2,11 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Task } from '../Models/Task';
+import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root',
 })
 export class TaskService {
-  private API_URL = 'http://localhost:3000/tasks';
+  // Make environment apiUrl private for development and production
+  private API_URL = environment.apiUrl;
+
   constructor(private http: HttpClient) {}
 
   // Get all tasks
