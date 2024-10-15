@@ -1,0 +1,76 @@
+.task-list {
+  height: 100%;
+  background-color: rgba(227, 225, 225, 0.882);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  margin: 100px auto;
+}
+
+.task-list h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #714d26;
+}
+
+.addTodo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.addTodo .task-input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.addTodo .task-input:focus {
+  border-color: #e38d31;
+}
+
+.addTodo .add-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #e38d31;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+.addTodo .add-button:hover {
+  background-color: #d87726;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.task-list .task-item {
+  margin: 0.5rem 0;
+}
+
+.task-list::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/todo.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -1;
+}
